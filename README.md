@@ -8,6 +8,14 @@ previo a iniciar el dedarrollo de software para web usando el framework de NodeJ
 practicas de repaso en JavaScript puro, con el objetivo de confirmar los conocimientos basicos de logica
 de programacion 
 
+## Hitorial de practicas 
+
+
+ |No.| Descripcion|Estatus|
+ |--|--|--|
+ |1.|Metodologia de Evaluacion| ✅Finalizada|
+ |2.|Inicializacion del Proyecto de Fundamentos de JavaScript |Activa|
+
 
 ### Autor 
 Jose Agustin Jimenez Castillo 
