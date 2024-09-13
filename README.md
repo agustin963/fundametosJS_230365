@@ -14,7 +14,9 @@ de programacion
  |No.| Descripcion|Estatus|
  |--|--|--|
  |1.|Metodologia de Evaluacion| ✅Finalizada|
- |2.|Inicializacion del Proyecto de Fundamentos de JavaScript |Activa|
+ |2.|Inicializacion del Proyecto de Fundamentos de JavaScript |✅Finalizada|
+ |3.|Ejecicio 01: Declaracion de Variables en JS | Activa |
+
 
 
 ### Autor 
