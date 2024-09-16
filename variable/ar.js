@@ -4,16 +4,16 @@
 */
 var miNombre = "Agsutin J.";
 var misApellidos ;
-var miEdad = 32 ;
+var miEdad = 19 ;
 
 console.warn("----- Declaracion de variables usando VAR");
-console.log("Itentando leer las variables", miNombre,misApellidos);
+console.log("Intendo leer las variables", miNombre,misApellidos);
 
 misApellidos = "Jimenez Castillo";
 console.log("Ya que ambas fueron inicializadas vuelbo a intentar leerlas", miNombre,misApellidos);
 
  // una variable  puede cambiar de valor en el proceso de ejecucion del programa 
-cosnole.warn("---- Declaracion de variables del tipo constante unsando  CONST");
+console.warn("---- Declaracion de variables del tipo constante unsando  CONST");
 const miUniversidad = "Universidad Tecnologica de Xicotepec de Juarez";
 const miMatricula = "230365";
 
@@ -31,7 +31,7 @@ let miFechaNacimiento = "2005-03-04"
 let miColorFavorito;
 
 console.warn("----- Declaracion de variables usando LET")
-console.log("Genial , te voy conociendo menjor, ahora se que naciste el:", miFechaNacimiento
+console.log("Genial , te voy conociendo mejor, ahora se que naciste el:", miFechaNacimiento
     ," y tu color favorito es es: mmmmmmmmmmm dejame pensar....") 
 miColorFavorito = "Negro";
 console.log(`creo que es ${miColorFavorito} ,le atine`)
