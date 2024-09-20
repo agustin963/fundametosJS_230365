@@ -167,4 +167,65 @@ if (numero1 === numero5) {
 }
 
 
+//7
+console.log(`¿Es == Symbol(\"5\")?, antes de compararlos analizamos que tipo de dato son: siendo numero del tipo : ${typeof(numero1)} y numero 5 de tipo 
+ ${typeof(numero5)}`)
+ if(numero1 === numero8)
+    console.log("se comparo numero1 con numero 8 , determinando que tienen el mismo valo ")
+else
+console.log("se comparo numerto1 con numero8 , determinando que tienen el mismo valor , pero no el mismo tipo de dato")
+
+//8
+
+
+console.warn("----- Tipo de dato - NULL()nulo o vacio ");
+// el tipo de dato 
+
+
+let nombreUsuario=null;
+let passUsuario = null;
+let generoUsuaruio = null;
+let estatusRelacionSentimental=null;
+let fecha_ultimoPost;
+
+// supongamos que etamos programando una red social, tipo facebook , en la que parte de la informacion se publicara en el perfil de usuario
+
+// si el usuario no ha inicializado sesion en el dispositivo movil o en la aplicacion web , pude explorar contenido de acceso publico.y  no existira informacion para mostrar
+
+// en la HU(historias de usuarios ) que el usuario desea logearse debera ingresar su numero de telefono o correo electronico y una constraseña que debmos guardar en las variables previamente declaradas
+
+// supongamos que el usuario : Agustin con correo electronico 230365@utxicotepec.edu.mx desea ingresar con su contraseña : pas2344
+
+nombreUsuario="230365@utxicotepec.edu.mx";
+passUsuario="pas2344";
+
+// en este momento de ejecucion del sistema no sabmos su genero , ni su estatus de relacio sentimental
+
+console.log(`el usuario: ${nombreUsuario} esta intentando ingresar con una contraseña en: ${passUsuario}`);
+
+//lo que prosigue es que el sistema corteja los datos ingresados con la base de datos y en caso de que los datos correctos comenzara la sesion  .........
+
+console.log(`El usuario: ${nombreUsuario} , se ha logeado exitosamente , al tener acceso a su informacion de perfil podemos deducir que es deñ genero ${generoUsuaruio}y que su estatus de relacion
+    es: ${estatusRelacionSentimental} y su ultima publicacion la realizo el: ${fecha_ultimoPost}`);
+
+// Comparando NUll VS UNDEFINED
+// Si bien UNDEFINED y NULL tienen el mismo valor , no tienen el mismo tipo de dato
+
+console.log("comparacion de la equidad entre Undefined y Null")
+console.log(
+ (fecha_ultimoPost == estatusRelacionSentimental)?
+ "Ambas variables tiene  el mismovalor ":
+ "las variables no tienen el mismo valor"
+
+);
+
+console.log("comparacion de ña identidad este Undefined y Null")
+console.log(
+    (fecha_ultimoPost === estatusRelacionSentimental)?
+    "ambas variables tienen el mismo valor y el mismo tipo de dato ":
+    "las variables "
+)
+
+
+
 
