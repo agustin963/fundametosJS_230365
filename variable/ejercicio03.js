@@ -1,3 +1,4 @@
+
 const bg ="linear-gradient(11deg,rgbs(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 86%)";
 const style_console =`backgroun:${bg};color:white; border-radius : 6px;padding:4px;font-sixe:1.0rem`
 
@@ -114,17 +115,61 @@ console.log(`Los datos del producto son: \n
         Comprador_clave:230365,
         Cantidad: 2,
         Estatus:"Carrito de compras",
+        TipoPago:"Tarjeta de Credito"
 
     }
 
 
     // En base a los 3 obejetos necesitamos calcular el costo de la compra y si alcanza con el saldo a favor 
 
-    let{Producto_Precio: Precio} = Producto2;
-    let{pedido_Cantidad:Cantidad}= pedido;
-    let{Cliente_SaldoActual:SaldoActual} = comprador;
-    let Costo_Compra =Producto_Precio * Pedido_Cantidad;
+    let{ Precio: producto_Precio} = Producto2;
+    let{Cantidad:pedido_Cantidad}= pedido;
+    let{SaldoActual:Cliente_SaldoActual} = comprador;
+    let Costo_Compra = Producto_Precio * pedido_Cantidad;
 
-    console.log(`El cliente ha agregado a su carrito de compras ${Pedido_Cantidad} unidades, con un costo total de:${Costo_Compra}`);
+    console.log(`El cliente ha agregado a su carrito de compras ${pedido_Cantidad} unidades, con un costo total de:${Costo_Compra}`);
     if(Costo_Compra< Cliente_SaldoActual)
         console.log("el cliente tiene saldo suficiente");
+
+    // Actualizar el valor de los obejetos 
+    console.log("c%.- Actualizamos los valores de las propiedades de un obejeto", style_console);
+
+    console.log(`El obejto actualmente tiene los siguinetes valores`) 
+    console.log(JSON.stringify(Producto2, null,2));
+    // convierte el obejto  a una cadena para evitar probleas con la referencia 
+    console.log(`Por cuentiones de inlfacion el costo del producto ha cambiado y debe ser actualizado.... de $6,829 a $g,915.50`)
+
+    // para modificar el valor de un obejto basta con igualr el numero del valor de la propiedad deseada 
+
+    Producto2.Precio=6915.50;
+    console.log(`los nuevos valores de producto son: `)
+    console.log(Producto2)   
+
+    //¿Puedo cambiar no solo el valor si n o el irpo de un dato en JavaScript?
+
+    console.log('--------------------------------------------------------------------------------------------------------')
+    console.log(`El obejto actualmente tiene los siguinetes valores  ${Producto2}`)
+    let tipoDisponibilidad =typeof(Producto2.Disponibilidad)
+    console.log(`El tipo de dato de la disponibilidad es: ${tipoDisponibilidad}`)
+    console.log (JSON.stringify(Producto2, null ,2));
+    Producto2.Disponibilidad="Si";
+    let nuevoTipoDisponibilidad = typeof(Producto2.Disponibilidad)
+    console.log(Producto2)   
+    console.log(`El nuevo tipo de dato de la disponibilidad es: ${nuevoTipoDisponibilidad}`)
+
+    // Agregar nuevas propiedades al obejeto
+    console.log("%c5.- Agregar nuevas propiedades al objeto" , style_console);
+    // Para agregar una nueva propiedad utilizaremos el nombre del obejeto los corchetes [] y el nuevo de la propiedad con su valor por defecto.
+    console.log("los datos del comprador son ")
+    console.table(comprador)
+    comprador['Direccion']="AV.Benito Juarez No.1525 ,interior 4D, Xicotepec de Juarez, Puebla,Mexico"
+    comprador['Tipo']="Nuevo Cliente"
+    comprador['ActividadReciente']= true
+    comprador['TotalCompras']=3516.25
+    console.log("Despues de haber sido actualizado")
+    console.table(comprador)
+
+
+
+
+    console.log("%c6.- Eliminar propiedades existentes de un obejeto " ,style_console); 
