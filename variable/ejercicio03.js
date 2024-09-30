@@ -79,7 +79,7 @@ console.log(`Los datos del producto son: \n
 
 
 
-    console.log("%c3.- Destructuracion de Objeto",style_console);
+    console.log("%c3.- Destructuracion de Objeto", style_console);
     let Producto2 =
     {
         clave:230365,
@@ -172,8 +172,13 @@ console.log(`Los datos del producto son: \n
 
 
 
-
-    console.log("%c6.- Eliminar propiedades existentes de un obejeto " ,style_console); 
+    // Eliminar propiedades existentes de un Objeto
+    console.log( "%c6.- Eliminar propiedades existentes de un Objeto", style_console );
+    console.log("La estructura y valores del objeto PEDIDO son previos a la modificación: ")
+    console.table(pedido)
+    delete pedido.TipoPago
+    console.log("Después de la modifcación...")
+    console.table(pedido)
 
 
 
