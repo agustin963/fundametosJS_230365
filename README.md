@@ -11,12 +11,13 @@ de programacion
 ## Hitorial de practicas 
 
 
- |No.| Descripcion|Estatus|
- |--|--|--|
- |1.|Metodologia de Evaluacion| ✅Finalizada|
- |2.|Inicializacion del Proyecto de Fundamentos de JavaScript |✅Finalizada|
- |3.|Ejecicio 01: Declaracion de Variables en JS | Activa |
-
+|No.| Descripcion|Potenciador|Estatus|
+ |--|--|--|--|
+ |1.|Metodologia de Evaluacion|1| ✅Finalizada|
+ |2.|Inicializacion del Proyecto de Fundamentos de JavaScript|5|✅Finalizada|
+ |3.|Ejecicio 01: Declaracion de Variables en JS|10|✅Finalizada |
+ |4.|Declaracion de Variables (String/BigInt/Symbol/Null/Fuction)|6|✅Finalizada|
+ |5.|Introduccion a Objetos|0|Activa|
 
 
 ### Autor 
