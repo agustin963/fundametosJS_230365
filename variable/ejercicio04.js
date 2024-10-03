@@ -1,7 +1,8 @@
 // repaso 
-
-const bg="linear-gradient(11deg , rgba(199) 0% , rgba(9,9,121,1) 33%  rgba(0,212,255,1) 86% )"
-const style_console = `background : ${bg} ; color : white; border-radius: 6px, padding   `
+const bg = "linear-gradient(11deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 86%)";
+const style_console = `background: ${bg}; color: white; border-radius: 6px; padding: 4px; font-size: 1.0rem; font-weight: bold`
+//const bg="linear-gradient(11deg , rgba(199) 0% , rgba(9,9,121,1) 33%  rgba(0,212,255,1) 86% )"
+//const style_console = `background : ${bg} ; color : white; border-radius: 6px, padding   `
 //Personalizacion de salida 
 // Para declarar un aregllo (array)  de datos en Jav Script basta con agregar [] , y dentro que contendra el arreglo 
 console.warn("Practica 06 : Arreglos en Java Script ")
@@ -26,8 +27,7 @@ console.log(`¿Que tipo de dato es un arrglo?: ${typeof{mesesAnio}}`)
 
 // Al ser JavaScript un lenguaje debilimente tipado podremos crear arreglos mixtos de tipos de datos 
 
-let arregloMixto =["String",5,45.26,-200,-.16854, Symbol ("MARH"), 'z',false,BigInt(1111511111111868111554565611), true,{latitud:"20° 18' 0\" N" , longuitud:"97° 58' 00\"W" , altitud:796}, saludar, null]
-//Mostramos el contenido del objeto
+let arregloMixto =["String",5,45.26,-200,-.16854, Symbol ("MARH"), 'z',false,BigInt(1111515455565611), true,{latitud:"20° 18' 0\" N" , longuitud:"97° 58' 00\"W" , altitud:796}]
 
 console.log(arregloMixto)
 console.table(typeof(arregloMixto));
