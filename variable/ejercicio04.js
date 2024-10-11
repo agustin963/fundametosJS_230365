@@ -18,7 +18,7 @@ console.table(mesesAnio);
 
 // Acceder a los valores de un arreglo de datos para acceder al valor solo basta enviar la posicion del dato que quereomos dentro de los limites establecidos . siendo el limite inferior 0 y el superior tamaño -1
 
-console.log("%2.- Leer o recuperar los datos de un arreglo", style_console)
+console.log("%c2.- Leer o recuperar los datos de un arreglo", style_console);
 console.log(`El primer mes del años es ${mesesAnio[0]}`);
 console.log(`El ultimo mes del años es ${mesesAnio[mesesAnio.length-1]}`);
 // Nose puede acceder a elementos con posicion negativa o posiciones superiores al tamaño del definido 
@@ -93,7 +93,7 @@ console.log(`La longuitud de la fila 1 es :`)
 console.log(`La longuitud de la fila 2 es :`)
 
 let estudiantes = ["Angel rufino","Idai Vega","Daniel Bravo","Esther Gonzales","Ailton Artiaga"]
-console.log("%c5.-  ", style_console)
+console.log("%c5.- Agregar un nuevo elemento a un arregllo (PUSH) ", style_console)
 console.log("Los elemetos actuales del arreglo son:")
 console.table(estudiantes)
 console.log("Agregamos un nuevo estudiante llamado: Abril Guzamn ")
@@ -133,7 +133,7 @@ estudiantes.shift();
 console.log("Despues de eliminar el elemto el arreglo queda de la siguiente manera:")
 console.table(estudiantes)
 
-console.log("%c9.- ")
+console.log("%c9.-Modificar un arreglo en un arreglo nuevo con posiciones definidas (SPLICIE) ", style_console)
 console.log("El arreglo original tiene los siguientes elemetos ")
 console.table(estudiantes)
 console.log("Dividir el arreglo en uno nuevo eliminado ciertos elemtos en base a su posicion")
@@ -165,7 +165,7 @@ estudiantes.splice(0,1,"Brandon Leon");
 console.log("Resultando en :")
 console.table(estudiantes);
 
-console.log("%c10.- Metodos para la manipulacion de Arreglos INMUTABLES")
+console.log("%c10.- Metodos para la manipulacion de Arreglos INMUTABLES", style_console)
 let signosZodiacales = ["Aries","Tauro","Geminis","Cancer","Leo","Virgo","Libar","Escorpio","Sagitario","Capricarnio","Acuario","Picis"]
 // Destructuracion de Arreglos
  
